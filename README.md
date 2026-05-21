@@ -2,7 +2,7 @@
 
 A Python tool for converting river vectors (Shapefile/GeoJSON) into aligned raster masks using a hybrid area-ratio supersampling method. 
 
-Standard rasterization often forces a binary choice: `all_touched=True` makes rivers "fat", while `all_touched=False` causes narrow streams to disconnect. This tool solves both issues by calculating the exact area-coverage ratio per pixel and enforcing hydrological continuity.
+Standard rasterization often forces a binary choice: `all_touched=True` makes rivers "fat", while `all_touched=False` causes narrow streams to disconnect. This tool solves both issues by calculating the exact area-coverage ratio per pixel.
 
 ---
 
