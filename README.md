@@ -10,8 +10,6 @@ Standard rasterization often forces a binary choice: `all_touched=True` makes ri
 
 - **Area-Ratio Supersampling:** Scales the target grid up by 4x4 sub-pixels, performs fine-grained rasterization, and aggregates back to the original DEM resolution to calculate the exact coverage percentage.
 - **Adjustable Threshold:** Dynamically control river thickness via `coverage_threshold` (e.g., `0.3` means a pixel becomes water if $\ge$ 30% of its area is covered).
-- **Continuity Enforcement (Double Insurance):** Automatically extracts and burns in the centerline/skeleton of the vector to ensure narrow streams never break up.
-- **Perfect Alignment:** Auto-reprojects vector data to match the CRS, resolution, and extent of your reference DEM.
 
 ---
 
